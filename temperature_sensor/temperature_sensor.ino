@@ -27,7 +27,7 @@ OneWire oneWire(TEMP_SENSOR_PIN);
 // Pass our oneWire reference to Dallas Temperature sensor 
 DallasTemperature sensors(&oneWire);
 
-// When no module is detected it'll return -127.00, when can use this to do stuff
+// When no module is detected it'll return -127.00, we can use this to do stuff
 const float ERROR_READING_SENSOR = -127.00;
 
 
