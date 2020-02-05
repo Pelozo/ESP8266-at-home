@@ -1,0 +1,22 @@
+
+<html>
+    <head>
+        <title>Testing servo</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <script>
+            function moveServo(value){                
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", "{{url}}" + value, true);
+                xhttp.send();
+            } 
+        </script>
+    </head>
+    
+    <body>
+        <h1>Testing servo</h1>
+        <div class="slidecontainer">
+            <input type="range" min="0" max="180" value="0" class="slider" id="myRange" onchange="moveServo(this.value)">
+        </div>
+    </body>
+
+</html>

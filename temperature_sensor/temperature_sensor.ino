@@ -55,7 +55,7 @@ void loop() {
     sendInfo(getSensorInformation());    
   }
 
-  Serial.println("Seeping for " + String(DELAY) + " minutes.");
+  Serial.println("Sleeping for " + String(DELAY) + " minutes.");
   delay(DELAY * 60000);
 
 }
